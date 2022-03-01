@@ -1,12 +1,15 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
 
-type Props = {}
+type Props = {
+  navigation: any
+}
 
-const RecipeDetailsScreen = (props: Props) => {
+const RecipeDetailsScreen = ({navigation}: Props) => {
   return (
     <View>
         <Text>RecipeDetailsScreen</Text>
+        <Button title='Revenir' onPress={() => {navigation.goBack()}} />
     </View>
   )
 }

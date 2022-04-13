@@ -10,7 +10,7 @@ type actionType = {
 const recipesList = (state = initialState, action: actionType) => {
   switch (action.type) {
     case ADD_RECIPES:
-        return action.payload
+        return action.payload.data
 
     default:
       return state;

@@ -1,3 +1,5 @@
+import { ADD_RECIPES } from "../actionsType";
+
 const initialState: any[] = [];
 
 type actionType = {
@@ -7,6 +9,9 @@ type actionType = {
 
 const recipesList = (state = initialState, action: actionType) => {
   switch (action.type) {
+    case ADD_RECIPES:
+        return action.payload
+
     default:
       return state;
   }

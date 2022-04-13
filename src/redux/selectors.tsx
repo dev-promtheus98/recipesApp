@@ -1,1 +1,1 @@
-export const getTasks = (store: { recipesList: any; }) => store.recipesList;
+export const getRecipes = (store: { recipesList: any; }) => store.recipesList;
